@@ -1,0 +1,77 @@
+{
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "flatfile.com",
+    "logo": {
+      "dark": "/logo/dark.svg",
+      "light": "/logo/light.svg",
+      "href": "https://flatfile.com"
+    },
+    "isWhiteLabeled": true,
+    "api": {
+      "baseUrl": "https://platform.flatfile.com/api",
+      "auth": {
+        "method": "bearer"
+      }
+    },
+    "favicon": "/favicon.jpg",
+    "colors": {
+      "primary": "#3B2FC9",
+      "light": "#6673FF",
+      "dark": "#3B2FC9",
+      "background": {
+        "dark": "#0f1117",
+        "light": "#fff"
+      }
+    },
+    "feedback": {
+      "raiseIssue": true,
+      "suggestEdit": true
+    },
+    "modeToggle": {
+      "default": "dark"
+    },
+    "backgroundImage": "/images/background.png",
+    "redirects": [
+      {
+        "source": "/guides/upgrade/v2_upgrade",
+        "destination": "/upgrade/v2_upgrade"
+      },
+      {
+        "source": "/upgrade/v2_repo",
+        "destination": "https://github.com/FlatFilers/Upgrade-Portal"
+      }
+    ],
+    "topbarLinks": [
+      {
+        "name": "Create account",
+        "url": "https://flatfile.com/account/sign-up/"
+      }
+    ],
+    "topbarCtaButton": {
+      "name": "Sign in",
+      "url": "https://platform.flatfile.com"
+    },
+    "versions": [
+      "latest",
+      { "name": "v3", "url": "https://flatfile.com/versioned-docs/3.0" },
+      { "name": "v2", "url": "https://flatfile.com/versioned-docs/2.0" }
+    ],
+    "anchors": [
+      {
+        "name": "API Reference",
+        "icon": "rectangle-terminal",
+        "url": "https://reference.flatfile.com/docs/api/"
+      }
+    ],
+    "navigation": [
+      {
+        "group": "Documentation",
+        "pages": ["overview", "starter-projects"]
+      }
+    ],
+    "footerSocials": {
+      "website": "https://flatfile.com",
+      "github": "https://github.com/FlatFilers"
+    }
+  }
+  
