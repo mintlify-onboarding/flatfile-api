@@ -8,7 +8,6 @@
     },
     "isWhiteLabeled": true,
     "api": {
-      "baseUrl": "https://platform.flatfile.com/api",
       "auth": {
         "method": "bearer"
       }
@@ -51,22 +50,189 @@
       "name": "Sign in",
       "url": "https://platform.flatfile.com"
     },
-    "versions": [
-      "latest",
-      { "name": "v3", "url": "https://flatfile.com/versioned-docs/3.0" },
-      { "name": "v2", "url": "https://flatfile.com/versioned-docs/2.0" }
-    ],
-    "anchors": [
-      {
-        "name": "API Reference",
-        "icon": "rectangle-terminal",
-        "url": "https://reference.flatfile.com/docs/api/"
-      }
-    ],
     "navigation": [
       {
-        "group": "Documentation",
-        "pages": ["overview", "starter-projects"]
+        "group": "Auth",
+        "pages": [
+          "api-reference/auth/get-the-current-account",
+          "api-reference/auth/create-an-access-token",
+          "api-reference/auth/obtain-the-api-keys-for-a-specific-environment",
+          "api-reference/auth/create-a-new-api-key-of-the-specified-type-for-the-given-environment",
+          "api-reference/auth/delete-the-specified-api-key"
+        ]
+      },
+      {
+        "group": "Users & Guests",
+        "pages": [
+          "api-reference/users-&-guests/list-users",
+          "api-reference/users-&-guests/get-a-user",
+          "api-reference/users-&-guests/create-an-api-token",
+          "api-reference/users-&-guests/list-all-tokens",
+          "api-reference/users-&-guests/list-guests",
+          "api-reference/users-&-guests/create-a-guest",
+          "api-reference/users-&-guests/create-a-user",
+          "api-reference/users-&-guests/get-a-guest",
+          "api-reference/users-&-guests/update-a-guest",
+          "api-reference/users-&-guests/delete-a-guest",
+          "api-reference/users-&-guests/invite-guests",
+          "api-reference/users-&-guests/exchange-an-invitation-for-an-access-token"
+        ]
+      },
+      {
+        "group": "Environments",
+        "pages": [
+          "api-reference/environments/list-environments",
+          "api-reference/environments/create-an-environment",
+          "api-reference/environments/get-an-environment",
+          "api-reference/environments/update-an-environment",
+          "api-reference/environments/delete-an-environment",
+          "api-reference/environments/get-environment-subscription-credentials"
+        ]
+      },
+      {
+        "group": "Events",
+        "pages": [
+          "api-reference/events/get-all-events",
+          "api-reference/events/create-an-event",
+          "api-reference/events/get-an-event",
+          "api-reference/events/acknowledge-an-event",
+          "api-reference/events/get-subscription-credentials"
+        ]
+      },
+      {
+        "group": "Agents",
+        "pages": [
+          "api-reference/agents/get-all-agents",
+          "api-reference/agents/create-an-agent",
+          "api-reference/agents/get-all-agent-logs-in-your-environment",
+          "api-reference/agents/get-an-agent",
+          "api-reference/agents/delete-an-agent",
+          "api-reference/agents/get-agent-logs"
+        ]
+      },
+      {
+        "group": "Spaces",
+        "pages": [
+          "api-reference/spaces/get-all-spaces",
+          "api-reference/spaces/create-a-space",
+          "api-reference/spaces/get-a-space",
+          "api-reference/spaces/update-a-space",
+          "api-reference/spaces/delete-a-space",
+          "api-reference/spaces/list-documents",
+          "api-reference/spaces/create-a-document",
+          "api-reference/spaces/get-a-document",
+          "api-reference/spaces/update-a-document",
+          "api-reference/spaces/delete-a-document",
+          "api-reference/spaces/archives-a-space"
+        ]
+      },
+      {
+        "group": "Workbooks",
+        "pages": [
+          "api-reference/workbooks/list-workbooks",
+          "api-reference/workbooks/create-a-workbook",
+          "api-reference/workbooks/get-a-workbook",
+          "api-reference/workbooks/update-a-workbook",
+          "api-reference/workbooks/delete-a-workbook"
+        ]
+      },
+      {
+        "group": "Sheets",
+        "pages": [
+          "api-reference/sheets/get-all-sheets",
+          "api-reference/sheets/get-a-sheet",
+          "api-reference/sheets/delete-a-sheet",
+          "api-reference/sheets/get-record-counts",
+          "api-reference/sheets/validate-sheet",
+          "api-reference/sheets/download-records-as-a-csv-file",
+          "api-reference/sheets/adds-a-new-field-to-a-sheet",
+          "api-reference/sheets/returns-the-commit-versions-for-a-sheet"
+        ]
+      },
+      {
+        "group": "Snapshots",
+        "pages": [
+          "api-reference/snapshots/create-snapshot",
+          "api-reference/snapshots/list-snapshots",
+          "api-reference/snapshots/get-snapshot",
+          "api-reference/snapshots/delete-snapshot",
+          "api-reference/snapshots/get-records",
+          "api-reference/snapshots/restore-snapshot"
+        ]
+      },
+      {
+        "group": "Records",
+        "pages": [
+          "api-reference/records/get-records",
+          "api-reference/records/insert-records",
+          "api-reference/records/update-records",
+          "api-reference/records/delete-records",
+          "api-reference/records/finds-and-replaces-all-field-values-matching-search-criteria-with-a-given-value"
+        ]
+      },
+      {
+        "group": "Cells",
+        "pages": [
+          "api-reference/cells/get-record-cells-by-field"
+        ]
+      },
+      {
+        "group": "Commits",
+        "pages": [
+          "api-reference/commits/returns-the-details-of-a-commit-version",
+          "api-reference/commits/complete-a-commit-version"
+        ]
+      },
+      {
+        "group": "Files",
+        "pages": [
+          "api-reference/files/list-files",
+          "api-reference/files/upload-a-file",
+          "api-reference/files/get-a-file",
+          "api-reference/files/delete-a-file",
+          "api-reference/files/update-a-file",
+          "api-reference/files/download-a-file"
+        ]
+      },
+      {
+        "group": "Jobs",
+        "pages": [
+          "api-reference/jobs/list-jobs",
+          "api-reference/jobs/create-a-job",
+          "api-reference/jobs/get-a-job",
+          "api-reference/jobs/delete-a-job",
+          "api-reference/jobs/get-a-jobs-execution-plan",
+          "api-reference/jobs/update-a-job",
+          "api-reference/jobs/replace-a-jobs-plan",
+          "api-reference/jobs/update-a-jobs-plan",
+          "api-reference/jobs/execute-a-job",
+          "api-reference/jobs/acknowledge-a-job",
+          "api-reference/jobs/acknowledges-a-job-outcome",
+          "api-reference/jobs/complete-a-job",
+          "api-reference/jobs/fail-a-job",
+          "api-reference/jobs/cancel-a-job"
+        ]
+      },
+      {
+        "group": "Secrets",
+        "pages": [
+          "api-reference/secrets/list-all-secrets-for-an-environment-or-environment-+-space",
+          "api-reference/secrets/upsert-a-secret",
+          "api-reference/secrets/delete-a-secret-by-id"
+        ]
+      },
+      {
+        "group": "Webhook",
+        "pages": [
+          "api-reference/webhook/handle-an-incoming-get-request-from-stripe",
+          "api-reference/webhook/handle-an-incoming-stripe-webhook"
+        ]
+      },
+      {
+        "group": "Versions",
+        "pages": [
+          "api-reference/versions/create-a-version-id"
+        ]
       }
     ],
     "footerSocials": {
